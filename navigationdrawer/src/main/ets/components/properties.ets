@@ -133,7 +133,7 @@ export class MenuProperties {
   private fontColor: string | Color
   private backgroundColor: string | Color
   private activeBackgroundColor: string | Color
-  private activeTextColor: string | Color
+  private activeFontColor: string | Color
   private borderRadius: Length
   private padding: Length | Padding
 
@@ -144,7 +144,7 @@ export class MenuProperties {
     this.fontColor = Color.Black
     this.backgroundColor = Color.White
     this.activeBackgroundColor = Color.White
-    this.activeTextColor = Color.Black
+    this.activeFontColor = Color.Black
     this.borderRadius = '0vp'
     this.padding = '0vp'
   }
@@ -205,14 +205,14 @@ export class MenuProperties {
     return this.activeBackgroundColor
   }
 
-  setActiveTextColor(activeTextColor: string | Color): MenuProperties {
-    if (activeTextColor == null || activeTextColor == undefined) activeTextColor = Color.Black
-    this.activeTextColor = activeTextColor
+  setActiveFontColor(activeFontColor: string | Color): MenuProperties {
+    if (activeFontColor == null || activeFontColor == undefined) activeFontColor = Color.Black
+    this.activeFontColor = activeFontColor
     return this
   }
 
-  getActiveTextColor(): string | Color {
-    return this.activeTextColor
+  getActiveFontColor(): string | Color {
+    return this.activeFontColor
   }
 
   setBorderRadius(borderRadius: Length): MenuProperties {
@@ -240,7 +240,7 @@ export class MenuProperties {
     this.iconWidth = '0vp'
     this.fontColor = Color.Black
     this.activeBackgroundColor = Color.White
-    this.activeTextColor = Color.Black
+    this.activeFontColor = Color.Black
     this.padding = {}
     return this
   }

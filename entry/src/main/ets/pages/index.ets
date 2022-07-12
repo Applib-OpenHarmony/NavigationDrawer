@@ -45,7 +45,7 @@ struct Index {
     this.model.setExtraMenu(this.extraOptions)
 
     this.menuModel.setActiveBackgroundColor('#A020F0')
-    this.menuModel.setActiveTextColor(Color.Black)
+    this.menuModel.setActiveFontColor(Color.Black)
     this.menuModel.setFontColor("#646364")
     this.menuModel.setBackgroundColor(Color.White)
     this.menuModel.setPadding('5vp')

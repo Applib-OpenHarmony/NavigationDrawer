@@ -46,7 +46,7 @@ struct Drawer {
           Flex({ justifyContent: FlexAlign.Center, alignItems: ItemAlign.Center }) {
             Text(page.getValue())
               .fontSize(this.menuModel.getFontSize(this.model.getSizeEnum()))
-              .fontColor(this.selected != null && this.selected != undefined && this.selected == page.getID() ? this.menuModel.getActiveTextColor() : this.menuModel.getFontColor())
+              .fontColor(this.selected != null && this.selected != undefined && this.selected == page.getID() ? this.menuModel.getActiveFontColor() : this.menuModel.getFontColor())
               .maxLines(2)
               .textOverflow({ overflow: TextOverflow.Ellipsis })
               .margin({ top: "10vp" })
@@ -76,7 +76,7 @@ struct Drawer {
       Flex() {
         Text(page.getValue())
           .fontSize(this.menuModel.getFontSize(this.model.getSizeEnum()))
-          .fontColor(!extra && this.selected != null && this.selected != undefined && this.selected == page.getID() ? this.menuModel.getActiveTextColor() : this.menuModel.getFontColor())
+          .fontColor(!extra && this.selected != null && this.selected != undefined && this.selected == page.getID() ? this.menuModel.getActiveFontColor() : this.menuModel.getFontColor())
           .maxLines(2)
           .textOverflow({ overflow: TextOverflow.Ellipsis })
       }.flexGrow(1).flexShrink(1)
