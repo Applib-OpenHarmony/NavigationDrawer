@@ -20,7 +20,7 @@ import { DrawerSize, MenuOption, Drawer } from '@ohos/navigation-drawer'
 struct Index {
 	@State visible: boolean = false
 	menu: MenuOption[] = [
-		new MenuOption('x', "x", 'x'),
+		new MenuOption('0', "In", $r('app.media.send')),
 		new MenuOption('2', "Outbox", $r('app.media.send')),
 		new MenuOption('3', "Favourites", $r('app.media.favorite')),
 		new MenuOption('4', "Delete", $r('app.media.delete')),

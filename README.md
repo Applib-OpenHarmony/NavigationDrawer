@@ -1,6 +1,6 @@
 # Navigation Drawer
 
-This library provides a navigation drawer in material design implemented using extended typescript
+This library provides a navigation drawer in material design implemented using extended typescript.
 
 ## Download & Install
 
