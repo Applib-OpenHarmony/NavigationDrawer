@@ -1,4 +1,4 @@
-# Material Select
+# Navigation Drawer
 
 This library provides a navigation drawer in material design implemented using extended typescript
 
@@ -13,9 +13,9 @@ Install using npm
 1. Import files and code dependencies
 
 ```ets
-import { MenuOption, DrawerSize } from '@ohos/material-select'
+import { MenuOption, DrawerSize } from '@ohos/navigation-drawer'
 
-import { Drawer } from '@ohos/material-select'
+import { Drawer } from '@ohos/navigation-drawer'
 ```
 
 2. Initialize drawer model data
@@ -26,7 +26,7 @@ private model:Drawer.Model = new Drawer.Model()
 private menuModel: Drawer.MenuModel = new Drawer.MenuModel()
 ```
 
-4. Initialize menus for drawer component
+3. Initialize menus for drawer component
 
 ```
 private menu: MenuOption[] = [
@@ -42,7 +42,7 @@ private extraOptions: MenuOption[] = [
 ]
 ```
 
-5. Create @State variable that will control the visibility of drawer
+4. Create @State variable that will control the visibility of drawer
 
 ```
 @State visible: boolean = false
@@ -93,7 +93,7 @@ If you find any problems during usage, you can submit an [Issue](https://github.
 ## Open source License
 
 This project is based
-on [Apache License 2.0](https://github.com/Applib-OpenHarmony/NavigationDrawer/blob/main/LICENSE), please enjoy and
+on [Apache License 2.0](https://github.com/Applib-OpenHarmony/NavigationDrawer/LICENSE), please enjoy and
 participate in open source freely.
 
 ## Open Issues
